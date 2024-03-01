@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
+          appBar: AppBar(leading: BackButton(),
             title: Text('login'),
             centerTitle: true,
           ),
@@ -39,7 +39,12 @@ class _MyAppState extends State<MyApp> {
               ),
             ),),
               TextButton(
-                  onPressed: null,
+                  onPressed:() {
+                    setState(() {
+
+                    });
+                  },
+
 
                   style: TextButton.styleFrom(backgroundColor: Colors.red),
                   child: Text('login'),
